@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'main main vue svelte';
+  grid-template-rows: 1fr 5fr;
+  height: 25vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: aliceblue;
+}
+
+.main {
+  grid-area: main;
+  background-color: pink;
+}
+
+.svelte {
+  grid-area: 'svelte';
+  background-color: aqua;
+}
+
+.vue {
+  grid-area: 'vue';
+  background-color: orange;
+}
